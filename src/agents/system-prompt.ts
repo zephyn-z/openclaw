@@ -427,7 +427,9 @@ export function buildAgentSystemPrompt(params: {
     toolLines.length > 0
       ? toolLines.join("\n")
       : [
-          "Pi lists the standard tools above. This runtime enables:",
+          "Available tools in this runtime: none.",
+          "",
+          "Pi standard tool catalog (reference only; not enabled in this session):",
           "- grep: search file contents for patterns",
           "- find: find files by glob pattern",
           "- ls: list directory contents",
